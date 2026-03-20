@@ -20,18 +20,23 @@ export default function Hero() {
       >
         <img
           src="/images/mountain-landscape.jpg"
-          alt="Mountain landscape"
+          alt="Cinema atmosphere"
           className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.45) saturate(0.8)" }}
         />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
+      <div className="relative z-10 text-center text-white px-6">
+        <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-4 opacity-70">Смотри вместе с друзьями</p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
+          CINESYNC
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+        <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 mb-8">
+          Синхронный просмотр фильмов и сериалов с близкими — где бы они ни были
         </p>
+        <button className="bg-white text-black px-8 py-3 text-sm uppercase tracking-wide font-medium hover:bg-neutral-200 transition-colors duration-300 cursor-pointer">
+          Создать комнату
+        </button>
       </div>
     </div>
   );
