@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Список публичных комнат",
+      "method": "GET",
+      "path": "/?action=list",
+      "expectedStatus": 200,
+      "expectedBody": {"rooms": []},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

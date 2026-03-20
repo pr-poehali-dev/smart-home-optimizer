@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Входящие приглашения без сессии — 401",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 401,
+      "expectedBody": {"error": "Нет сессии"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
